@@ -5,8 +5,12 @@ public class Hello {
     //  Tips: Shortcut,  psvm
     public static void main(String[] args) {
 //        System.out.println("Hello World");
-        Person p = new Person();
+        Person p = new Person(80f, 1.7f);
         p.hello();
+        p.height = 1.7f;
+        p.weight = 80;
+        System.out.println(p.bmi());
+
 
         // Basic data type
         int age = 19;
